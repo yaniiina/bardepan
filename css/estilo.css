@@ -1,0 +1,99 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: blanchedalmond;}
+.contenido{
+    margin-top: 10px;
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 200px 600px;
+    gap: 20px;
+}
+.contenido .imagen{
+    grid-column: 1/2;
+    display: grid;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contenido .ingredientes{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+}
+.contenido .foto{
+    display: grid;
+    grid-row: -1/-1;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contenido .filosofia{
+    display: grid;
+    grid-column: 2/3 ;
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    height: 80px;
+    justify-content: right;
+    background-color: blueviolet;
+    font: size 2rem;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+}
+a img{
+    height: 88px;
+    padding-left: 0%;
+    padding-right: 600px;
+}
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    margin: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    color:white
+}
+footer{
+    display: flex;
+    height: 120px;
+    justify-content: right;
+    background-color: blueviolet;
+    font: size 2rem;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+}
+    main div h1{
+        font-size: 3rem;
+        margin-top: 48px;
+        text-align: center;
+    }
+    footer a img{
+        height: 88px;
+        width: 88px;
+        padding-left: 0%;
+        padding-right: 900px;
+        }
+    footer div p{
+        color: white;
+    }
+    footer div svg{
+        display: inline;
+        justify-content: right;
+    }
+    @media screen and (max-widht:480px){
+        .contenido{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
